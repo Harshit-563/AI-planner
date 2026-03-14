@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 from youtube_parser import get_playlist_length
+from github_tracker import count_solved_problems
 
 def load_tasks():
     with open("tasks.json", "r") as f:
