@@ -2,8 +2,6 @@ from planner import load_tasks, calculate_daily_target, count_solved_problems
 from notifier import send_message
 
 
-send_message("Planner test from GitHub Actions")
-
 
 def progress_check():
 
