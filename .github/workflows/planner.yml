@@ -27,7 +27,7 @@ jobs:
         run: ls -R
 
       - name: Run planner
-        run: python progress_check.py
+        run: python progress_checker.py
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
