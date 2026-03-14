@@ -1,0 +1,24 @@
+[
+    {
+        "name": "DSA Sheet",
+        "total": 455,
+        "type": "dsa",
+        "completed": 130,
+        "deadline": "2026-03-31"
+    },
+    {
+        "name": "ML Playlist",
+        "total": 120,
+        "type": "youtube",
+        "url": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+        "completed": 20,
+        "deadline": "2026-04-10"
+    },
+    {
+        "name": "Aptitude Practice",
+        "total": 1200,
+        "type": "aptitude",
+        "completed": 100,
+        "deadline": "2026-03-31"
+    }
+]

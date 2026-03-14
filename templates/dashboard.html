@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Study Planner</title>
+</head>
+
+<body>
+
+<h1>Today's Study Plan</h1>
+
+{% for task in tasks %}
+
+<p>{{ task.name }}</p>
+<p>Do today: {{ task.target }}</p>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
