@@ -3,6 +3,8 @@ from notifier import send_message
 
 
 send_message("Planner test from GitHub Actions")
+
+
 def progress_check():
 
     tasks = load_tasks()
@@ -41,3 +43,7 @@ def progress_check():
         message += f"Remaining today: {remaining}\n\n"
 
     send_message(message)
+
+
+if __name__ == "__main__":
+    progress_check()
