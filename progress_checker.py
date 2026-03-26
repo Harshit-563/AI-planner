@@ -1,4 +1,4 @@
-from planner import load_tasks, calculate_daily_target, count_solved_problems
+from planner import load_tasks, calculate_daily_target, count_solved_problems, save_tasks
 from notifier import send_message
 
 
@@ -16,7 +16,7 @@ def progress_check():
             current = count_solved_problems()
             previous = task["completed"]
 
-            today_done = current - previous
+            today_done = max(0, current - previous)
 
             task["completed"] = current
 
@@ -40,6 +40,7 @@ def progress_check():
         message += f"Solved today: {today_done}\n"
         message += f"Remaining today: {remaining}\n\n"
 
+    save_tasks(tasks)
     send_message(message)
 
 
